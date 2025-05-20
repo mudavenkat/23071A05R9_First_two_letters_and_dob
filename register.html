@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+</head>
+<body>
+    <center>
+        <h2>User Registration Form</h2>
+        <form action="http://localhost:8080/RwithK/register" method="post">
+            <label>First Name: </label>
+            <input type="text" name="firstname" required minlength="2"><br><br>
+
+            <label>Last Name: </label>
+            <input type="text" name="lastname" required><br><br>
+
+            <label>Username </label>
+            <input type="text" name="username" required><br><br>
+
+             <label>Password: </label>
+            <input type="text" name="password" required><br><br>
+
+            <label>Date of Birth (ddmmyyyy): </label>
+            <input type="text" name="dob" pattern="\d{8}" title="Enter DOB as ddmmyyyy" required><br><br>
+
+            <label>Age: </label>
+            <input type="number" name="age" min="1" max="120" required><br><br>
+
+            <label>City: </label>
+            <input type="text" name="city" required><br><br>
+
+            <label>State: </label>
+            <input type="text" name="state" required><br><br>
+
+            
+
+            <label>Phone Number: </label>
+            <input type="tel" name="phone" pattern="\d{10}" title="10 digit phone number" required><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </center>
+</body>
+</html>
